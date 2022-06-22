@@ -38,6 +38,7 @@
     --filledbar: rgb(219, 186, 186);
     --mainpagetext2:black;
     --csmusic:rgb(252, 107, 107);
+    --blobcolor:#e9afae
 }
 
 :root{
@@ -57,8 +58,7 @@
     --skillssubtitles_: 17px;
     --skillsname_: 15px;
     --skillnumber_:15px;
-    --mainpagetext2_: 16px
-
+    --mainpagetext2_: 16px;
 }
 
 body.dark-theme {
@@ -102,6 +102,7 @@ body.dark-theme {
     --filledbar: rgb(105, 94, 176);
     --mainpagetext2:rgb(233, 230, 234);
     --csmusic:red;
+    --blobcolor: #413865;;
 }
 
 body.dark-theme .mainpage{
@@ -237,14 +238,14 @@ img{
 
 .blob1{
     opacity: 100%;
-    width: 200px;
-	height: 200px;
+    width: 220px;
+	height: 220px;
 	position: absolute;
-	top: 0%;
-	left: 0%;
+	top: 10%;
+	left: 3%;
 	transform: translate(-50%, -50%);
-	background-color: #413865;
-	animation: blob2 10s linear infinite;
+	background-color: var(--blobcolor);
+	animation: blob1 10s linear infinite;
     overflow: hidden;
 }
 
@@ -256,8 +257,8 @@ img{
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	background-color: #413865;
-	animation: blob2 10s linear infinite;
+	background-color: var(--blobcolor);
+	animation: blob2 30s linear infinite;
     overflow: hidden;
 }
 
@@ -266,10 +267,10 @@ img{
 	height:110px;
 	position: absolute;
 	top: 10%;
-	left:70%;
+	left:65%;
 	transform: translate(-50%, -50%);
-	background-color: #413865;
-	animation: blob2 10s linear infinite;
+	background-color: var(--blobcolor);
+	animation: blob3 7s linear infinite;
     overflow: hidden;
 }
 
@@ -324,6 +325,7 @@ img{
     animation: circle2 10s linear infinite;
     filter: invert();
 }
+
 .circle3{
     top: 30%;
     left: 18%;
@@ -332,6 +334,7 @@ img{
     animation: circle3 10s linear infinite;
     filter: invert();
 }
+
 .square1{
     top: 42%;
     left: 10%;
@@ -340,6 +343,7 @@ img{
     animation: square1 10s linear infinite;
     filter: invert();
 }
+
 .square2{
     top: 25%;
     left: 80%;
@@ -348,6 +352,7 @@ img{
     animation: square2 10s linear infinite;
     filter: invert();
 }
+
 .square3{
     top: 41%;
     left: 66%;
@@ -1119,11 +1124,55 @@ img{
     .introductiontitle{font-size: 34px;}
 }
 
-@keyframes blob2{
-    0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+@keyframes blob1{
+     0% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 	20% { border-radius: 60% 40% 40% 60% / 60% 25% 75% 40%; }
 	40% { border-radius: 70% 30% 95% 35% / 80% 45% 55% 20%;}
 	60% { border-radius: 30% 70% 70% 30% / 20% 30% 70% 80%; }
 	80% { border-radius: 40% 60% 40% 60% / 70% 55% 45% 30%; }
 	100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 }
+
+
+@keyframes blob2 {
+    0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+    5%  { border-radius: 48% 52% 41% 59% / 66% 37% 63% 34%; }
+    10% { border-radius: 69% 31% 71% 29% / 67% 31% 69% 33%; }
+    15% { border-radius: 60% 40% 71% 29% / 63% 65% 35% 37%; }
+    20% { border-radius: 61% 39% 51% 49% / 57% 58% 42% 43%; }
+    25% { border-radius: 66% 34% 25% 75% / 47% 30% 70% 53%; }
+    30% { border-radius: 32% 68% 38% 62% / 65% 60% 40% 35%; }
+    35% { border-radius: 63% 37% 41% 59% / 35% 38% 62% 65%; }
+    40% { border-radius: 57% 43% 49% 51% / 55% 71% 29% 45%; }
+    45% { border-radius: 47% 53% 34% 66% / 65% 36% 64% 35%; }
+    50% { border-radius: 44% 56% 32% 68% / 69% 26% 74% 31%; }
+    55% { border-radius: 28% 72% 37% 63% / 71% 44% 56% 29%; }    
+    60% { border-radius: 38% 62% 35% 65% / 74% 53% 47% 26%; }
+    65% { border-radius: 73% 27% 46% 54% / 54% 47% 53% 46%; }
+    70% { border-radius: 75% 25% 47% 53% / 49% 53% 47% 51%; }
+    75% { border-radius: 62% 38% 43% 57% / 55% 60% 40% 45%; }
+    80% { border-radius: 41% 59% 65% 35% / 73% 50% 50% 27%; }
+    85% { border-radius: 55% 45% 57% 43% / 73% 61% 39% 27%; }
+    90% { border-radius: 74% 26% 33% 67% / 40% 65% 35% 60%; }
+    95% { border-radius: 58% 42% 57% 43% / 53% 45% 55% 47%; }
+    100%{ border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
+}
+
+@keyframes blob3{
+    0%,100%{
+    border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    34%{
+        border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform:  translate3d(0,5px,0) rotateZ(0.01deg);
+    }
+    50%{
+      opacity: .89;
+      transform: translate3d(0,0,0) rotateZ(0.01deg);
+    }
+    67%{
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60% ;
+      transform: translate3d(0,-3px,0) rotateZ(0.01deg);
+    }
+  }
