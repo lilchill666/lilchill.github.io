@@ -48,6 +48,7 @@ const modalViews = document.querySelectorAll('.about_modal')
       modalCloses = document.querySelectorAll('.about_modal-close')
 let modal = function(modalClick){
   modalViews[modalClick].classList.add('active-modal')
+  document.body.style.overflow = "hidden"
 }
 
 modalBtns.forEach((modalBtn, i) => {
@@ -60,6 +61,7 @@ modalCloses.forEach((modalClose) =>{
   modalClose.addEventListener('click', ()=> {
     modalViews.forEach ((modalView) =>{
       modalView.classList.remove('active-modal')
+      document.body.style.overflow = "scroll"
     })
   })
 })
@@ -70,6 +72,7 @@ over.addEventListener('click', (e) => {
   if (e.target === over) {
     modalViews.forEach ((modalView) =>{
       modalView.classList.remove('active-modal')
+      document.body.style.overflow = "scroll"
     })
   }
 });

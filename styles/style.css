@@ -680,6 +680,7 @@ img{
     transition: 1s ease-in-out;
 }
 
+
 .phonesector, .pcdevicessector, .mypcspecssector {
     background-color: var(--sectorsbackground);
     border-radius: 18px;
@@ -861,24 +862,24 @@ img{
 
 @media only screen and (min-width:768px){
     :root{
-    --introduction_:90px;
-    --text-change_:40px;
-    --headings_:50px;
-    --devicestext_:26px;
-    --devicesheadings_:28px;
-    --buttonstext_:28px;
-    --rights_:16px;
-    --navlogo_:20px;
-    --navlinks_:16px;
-    --viewmore_:24px;
-    --modalpreview_:30px;
-    --modaltitle_:26px;
-    --modaltext_:23px;
-    --skillssubtitles_: 26px;
-    --skillsname_: 23px;
-    --skillnumber_:23px;
-    --mainpagetext2_: 24px
-    }
+        --introduction_:90px;
+        --text-change_:40px;
+        --headings_:50px;
+        --devicestext_:26px;
+        --devicesheadings_:28px;
+        --buttonstext_:28px;
+        --rights_:16px;
+        --navlogo_:20px;
+        --navlinks_:16px;
+        --viewmore_:26px;
+        --modalpreview_:30px;
+        --modaltitle_:26px;
+        --modaltext_:23px;
+        --skillssubtitles_: 26px;
+        --skillsname_: 23px;
+        --skillnumber_:23px;
+        --mainpagetext2_: 24px
+        }
 
     .contactbuttons{
         display: grid;
@@ -903,23 +904,6 @@ img{
         margin-top: 0;
     }
 
-    .photo{
-    height: 345px;
-    width: 389px;
-    position: absolute;
-    top: 12%;
-    left: 100%;
-    }
-
-    .dark{
-    transition: 1s ease-in-out;
-    opacity: 80%;
-    }
-
-    .light{
-    transition: 1s ease-in-out;
-    display: inline;
-    }
 
     .light1{
         transition: 1s ease-in-out;
@@ -1047,11 +1031,20 @@ img{
     .pcdevicestitle, .phonetitle, .mypcspecstitle{
         font-size: var(--devicesheadings_);
     }
+
+    .mypcspecstitle{
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
     
     .mypc, .pcdevices, .phone{
         font-size: var(--devicestext_);
     }
     
+    .mypc{
+        font-size: 31px;
+    }
+
     .phonesector, .pcdevicessector, .mypcspecssector {
         background-color: var(--sectorsbackground);
         border-radius: 18px;
@@ -1155,6 +1148,7 @@ img{
         grid-template-columns: repeat(4, 1fr);
     }
 
+
     .devicessector{
         grid-template-columns: repeat(2, 1fr);
     }
@@ -1168,6 +1162,41 @@ img{
         display: inline;
     }
     
+    .prefsmodal{
+        margin-top: 5rem;
+    }
+
+    .biomodal{
+        margin-top: 5rem;
+    }
+
+    .skillsmodal{
+        margin-top: 5rem;
+    }
+
+    .viewsmodal{
+        margin-top: 1rem;
+    }
+}
+
+@media only screen and (min-width:1000px){
+    .photo{
+        position: absolute;
+        height: 289px;
+        top:20%;
+        left: 100%;
+    }
+    
+    .dark{  
+        transition: 1s ease-in-out;
+        opacity: 80%;
+    }
+
+    .light{
+        transition: 1s ease-in-out;
+        display: inline;
+    }
+
     body.dark-theme .dark{
         display: inline;
         transition: 1s ease-in-out;
@@ -1178,7 +1207,7 @@ img{
         display: none;
     }
 }
-
+ 
 @media only screen and (min-width:1316px){
     .contactbuttons{
         display: grid;
@@ -1202,6 +1231,8 @@ img{
     .telegram, .instagram, .twitter{
         margin-top: 0;
     }
+
+    
 }
 
 @media only screen and (min-width:2016px){

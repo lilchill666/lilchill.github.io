@@ -72,6 +72,7 @@ over.addEventListener('click', (e) => {
   if (e.target === over) {
     modalViews.forEach ((modalView) =>{
       modalView.classList.remove('active-modal')
+      document.body.style.overflow = "scroll"
     })
   }
 });
