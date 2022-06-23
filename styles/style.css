@@ -119,27 +119,6 @@ body.dark-theme .mainpage{
 }
 
 
-
-.dark1{
-    display: none;
-}
-
-body.dark-theme .light1{
-    display: none;
-}
-
-body.dark-theme .dark1{
-    display: inline;
-}
-
-body.dark-theme .triangle3{
-    display: none;
-}
-
-body.dark-theme .circle3{
-    display: none;
-}
-
 body.dark-theme .lightblob{
     display: none;
 }
@@ -226,6 +205,14 @@ img{
     display: none;
 }
 
+.dark1{
+    display: none;
+}
+
+.light1{
+    display: none;
+}
+
 .text-change-container{
     height: 100%;
     width: 100%;
@@ -243,12 +230,13 @@ img{
 
 .mainpagetext2{
     color: var(--mainpagetext2);
+    line-height:1;
     font-weight: 500;
     font-size: var(--mainpagetext2_);
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 80px;
 }
 
 .test{
@@ -295,110 +283,6 @@ img{
     overflow: hidden;
 }
 
-.commonsymbols{
-    opacity: 100%;
-    position: absolute;
-    overflow: hidden;
-    transform: translate(-50%, -50%);
-}
-
-.cross1{
-    top: 50%;
-    left: 25%;
-    width: 40px;
-    height: 40px;
-    animation: cross1 10s linear infinite;
-}
-
-.cross2{
-    top: 14%;
-    left: 38%;
-    width: 45px;
-    height: 45px;
-    animation: cross2 10s linear infinite;
-}
-
-.cross3{
-    top: 38%;
-    left: 86%;
-    width: 40px;
-    height: 40px;
-    animation: cross3 10s linear infinite;
-}
-
-.circle1{
-    top: 39%;
-    left: 60%;
-    width: 46px;
-    height: 46px;
-    animation: circle1 10s linear infinite;
-}
-
-.circle2{
-    top: 6%;
-    left: 54%;
-    width: 42px;
-    height: 42px;
-    animation: circle2 10s linear infinite;
-}
-
-.circle3{
-    display: none;
-    top: 3%;
-    left: 50%;
-    width: 35px;
-    height: 35px;
-    animation: circle2 10s linear infinite;
-}
-
-.square1{
-    top: 42%;
-    left: 10%;
-    width: 45px;
-    height: 45px;
-    animation: square1 10s linear infinite;
-}
-
-.square2{
-    top: 25%;
-    left: 55%;
-    width: 45px;
-    height: 45px;
-    animation: square2 10s linear infinite; 
-}
-
-.square3{
-    top: 56%;
-    left: 90%;
-    width: 40px;
-    height: 40px;
-    animation: square3 10s linear infinite; 
-}
-
-.triangle1{
-    top: 34%;
-    left: 35%;
-    width: 40px;
-    height: 40px;
-    animation: triangle1 10s linear infinite; 
-}
-
-.triangle2{
-    top: 48%;
-    left: 72%;
-    width: 40px;
-    height: 40px;
-    animation: triangle2 10s linear infinite
-}
-
-.triangle3{
-    display: none;
-    top: 20%;
-    left: 50%;
-    width: 40px;
-    height: 40px;
-    animation: triangle3 10s linear infinite;
-}
 
 
 /**************************************MAINPAGE*****************************************/
@@ -663,7 +547,7 @@ img{
     font-size: 1.5rem;
     color: var(--modalclose);
     cursor: pointer;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-right: 10px;
 }
 
@@ -853,6 +737,7 @@ img{
     justify-content: center;
     flex-direction: row;
     transition: 1s ease-in-out;
+    margin-top: 0px;
 }
 
 .telegram, .instagram, .twitter, .spotify, .tiktok, .steam, .faceit{
@@ -860,7 +745,8 @@ img{
     align-items: center;
     justify-content: space-between;
     border-radius: 56px;
-    margin-top: 40px;
+    margin-top: 0px;
+    margin-bottom: 40px;
     width: 420px;
     margin-right: 5%; 
     margin-left: 5%;
@@ -984,11 +870,11 @@ img{
     }
 
     .photo{
-    height: 188px;
-    width: 210px;
-    margin-left: 40%;
-    margin-right: 0%;
-    margin-top: 0%;
+    height: 345px;
+    width: 389px;
+    position: absolute;
+    top: 12%;
+    left: 100%;
     }
 
     .dark{
@@ -998,41 +884,123 @@ img{
 
     .light{
     transition: 1s ease-in-out;
-
+    display: inline;
     }
+
+    .light1{
+        transition: 1s ease-in-out;
+        display: inline;
+        }
 
     .dark1{
         display: none;
     }
+
+    .commonsymbols{
+        opacity: 100%;
+        position: absolute;
+        overflow: hidden;
+        transform: translate(-50%, -50%);
+    }
     
-    body.dark-theme .triangle3{
-        display: inline;
+    .cross1{
+        top: 50%;
+        left: 25%;
+        width: 40px;
+        height: 40px;
+        animation: cross1 10s linear infinite;
     }
-
-    body.dark-theme .circle3{
-        display: inline;
+    
+    .cross2{
+        top: 14%;
+        left: 38%;
+        width: 45px;
+        height: 45px;
+        animation: cross2 10s linear infinite;
     }
-
-    body.dark-theme .light1{
+    
+    .cross3{
+        top: 38%;
+        left: 86%;
+        width: 40px;
+        height: 40px;
+        animation: cross3 10s linear infinite;
+    }
+    
+    .circle1{
+        top: 39%;
+        left: 60%;
+        width: 46px;
+        height: 46px;
+        animation: circle1 10s linear infinite;
+    }
+    
+    .circle2{
+        top: 6%;
+        left: 54%;
+        width: 42px;
+        height: 42px;
+        animation: circle2 10s linear infinite;
+    }
+    
+    .circle3{
         display: none;
+        top: 3%;
+        left: 50%;
+        width: 35px;
+        height: 35px;
+        animation: circle2 10s linear infinite;
     }
     
-    body.dark-theme .dark1{
-        display: inline;
-    }
-
-    
-
-    
-    body.dark-theme .dark{
-        display: inline;
-        transition: 1s ease-in-out;
-        opacity: 80%;
+    .square1{
+        top: 42%;
+        left: 10%;
+        width: 45px;
+        height: 45px;
+        animation: square1 10s linear infinite;
     }
     
-    body.dark-theme .light{
+    .square2{
+        top: 25%;
+        left: 55%;
+        width: 45px;
+        height: 45px;
+        animation: square2 10s linear infinite; 
+    }
+    
+    .square3{
+        top: 56%;
+        left: 90%;
+        width: 40px;
+        height: 40px;
+        animation: square3 10s linear infinite; 
+    }
+    
+    .triangle1{
+        top: 34%;
+        left: 35%;
+        width: 40px;
+        height: 40px;
+        animation: triangle1 10s linear infinite; 
+    }
+    
+    .triangle2{
+        top: 48%;
+        left: 72%;
+        width: 40px;
+        height: 40px;
+        animation: triangle2 10s linear infinite
+    }
+    
+    .triangle3{
         display: none;
+        top: 20%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        animation: triangle3 10s linear infinite;
     }
+    
 
     .devicessector{
         display: flex;
@@ -1148,8 +1116,27 @@ img{
         font-size: 21px;
         font-weight: 600;
     }
+    
     .aboutme_container{
         grid-template-columns: repeat(4, 1fr);
+    }
+    
+    body.dark-theme .light1{
+        display: none;
+    }
+    
+    body.dark-theme .dark1{
+        display: inline;
+    }
+    
+    body.dark-theme .dark{
+        display: inline;
+        transition: 1s ease-in-out;
+        opacity: 100%;
+    }
+    
+    body.dark-theme .light{
+        display: none;
     }
 }
 
@@ -1165,7 +1152,6 @@ img{
 	80% { border-radius: 40% 60% 40% 60% / 70% 55% 45% 30%; }
 	100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
 }
-
 
 @keyframes blob2 {
     0%  { border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%; }
