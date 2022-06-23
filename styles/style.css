@@ -378,6 +378,8 @@ img{
     }
 }
 
+
+
 .nav_link{
     display: flex;
     flex-direction: column;
@@ -860,7 +862,7 @@ img{
     }
 }
 
-@media only screen and (min-width:768px){
+@media only screen and (min-width:767px){
     :root{
         --introduction_:90px;
         --text-change_:40px;
@@ -931,12 +933,12 @@ img{
         left: 42%;
         width: 40px;
         height: 40px;
-        animation: cross1 10s linear infinite;
+        animation:  cross1 1.2s linear infinite;
     }
     
     .cross2{
         top: 14%;
-        left: 19%;
+        left: 28%;
         width: 45px;
         height: 45px;
         animation: cross2 10s linear infinite;
@@ -1184,34 +1186,6 @@ img{
     }
 }
 
-@media only screen and (min-width:1000px){
-    .photo{
-        position: absolute;
-        height: 339px;
-        top:7%;
-        left: 100%;
-    }
-    
-    .dark{  
-        transition: 1s ease-in-out;
-        opacity: 100%;
-    }
-
-    .light{
-        transition: 1s ease-in-out;
-        display: inline;
-    }
-
-    body.dark-theme .dark{
-        display: inline;
-        transition: 1s ease-in-out;
-    }
-    
-    body.dark-theme .light{
-        display: none;
-    }
-}
- 
 @media only screen and (min-width:1316px){
     .contactbuttons{
         display: grid;
@@ -1319,5 +1293,4 @@ img{
       transform: translate3d(0,-3px,0) rotateZ(0.01deg);
     }
 }
-
 
