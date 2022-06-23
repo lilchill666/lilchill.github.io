@@ -744,7 +744,7 @@ img{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    justify-content: center;
+    justify-content: left;
     flex-direction: row;
     transition: 1s ease-in-out;
     margin-top: 0px;
@@ -756,8 +756,9 @@ img{
     justify-content: space-between;
     border-radius: 56px;
     margin-top: 0px;
-    margin-bottom: 40px;
-    width: 420px;
+    margin-bottom: 35px;
+    max-width: 768px;
+    width: 90%;
     margin-right: 5%; 
     margin-left: 5%;
     height: 96px;
@@ -877,6 +878,29 @@ img{
     --skillsname_: 23px;
     --skillnumber_:23px;
     --mainpagetext2_: 24px
+    }
+
+    .contactbuttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 25px;
+        list-style: none;
+        transition: 1s ease-in-out;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-auto-columns: minmax(286px, 520px);
+    }
+
+    .telegram, .instagram, .twitter, .spotify, .tiktok, .steam, .faceit{
+        max-width: 520px;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .telegram, .instagram{
+        margin-top: 0;
     }
 
     .photo{
@@ -1017,7 +1041,7 @@ img{
         flex-wrap: wrap;
         margin: 0;
         padding: 0;
-        justify-content: center;
+        justify-content:center;
     }
     
     .pcdevicestitle, .phonetitle, .mypcspecstitle{
@@ -1049,7 +1073,7 @@ img{
         max-width: 265px;
         position: absolute;
         margin-top:500px;
-        margin-left: 300px;
+        margin-left: 30%;
     }
     
     .pcdevicessector{
@@ -1082,7 +1106,7 @@ img{
     }
 
     .nav{
-        height:3.7 rem;
+        height:4rem;
         column-gap: 1rem;
         max-width: 10000px;
     }
@@ -1130,6 +1154,11 @@ img{
     .aboutme_container{
         grid-template-columns: repeat(4, 1fr);
     }
+
+    .devicessector{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     
     body.dark-theme .light1{
         display: none;
@@ -1147,6 +1176,56 @@ img{
     
     body.dark-theme .light{
         display: none;
+    }
+}
+
+@media only screen and (min-width:1316px){
+    .contactbuttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 25px;
+        list-style: none;
+        transition: 1s ease-in-out;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-auto-columns: minmax(286px, 520px);
+    }
+
+    .telegram, .instagram, .twitter, .spotify, .tiktok, .steam, .faceit{
+        max-width: 520px;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .telegram, .instagram, .twitter{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width:2016px){
+    .contactbuttons{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        column-gap: 25px;
+        list-style: none;
+        transition: 1s ease-in-out;
+        margin-left: 5%;
+        margin-right: 5%;
+        grid-auto-columns: minmax(286px, 520px);
+    }
+
+    .telegram, .instagram, .twitter, .spotify, .tiktok, .steam, .faceit{
+        max-width: 520px;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        margin-top: 40px;
+    }
+
+    .telegram, .instagram, .twitter, .spotify{
+        margin-top: 0;
     }
 }
 
