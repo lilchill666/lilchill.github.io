@@ -54,7 +54,7 @@
     --viewmore_:16px;
     --modalpreview_:20px;
     --modaltitle_:19px;
-    --modaltext_:13px;
+    --modaltext_:15px;
     --skillssubtitles_: 17px;
     --skillsname_: 15px;
     --skillnumber_:15px;
@@ -488,12 +488,13 @@ img{
 }
 
 .about_modal{
+   -webkit-backdrop-filter: blur(8px);
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(8px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -503,12 +504,15 @@ img{
     opacity: 0;
     visibility: hidden;
     transition: .3s;
+   
 }
+
 
 
 .active-modal{
     opacity: 1;
-    visibility: visible;;
+    visibility: visible;
+    overflow: auto;
 }
 
 .about_modal-content{
@@ -516,6 +520,13 @@ img{
     background-color: var(--modal-bg);
     padding: 10px 10px 20px 10px;
     border-radius: 18px;
+    overflow-y: auto;
+}
+
+.viewsmodal{
+    overflow-y: auto;
+    margin-top: auto;
+    margin-bottom: var(--header-height);
 }
 
 .about_modal-abouts{
