@@ -343,6 +343,7 @@ img{
 }
 
 .circle3{
+    display: none;
     top: 3%;
     left: 50%;
     width: 35px;
@@ -391,6 +392,7 @@ img{
 }
 
 .triangle3{
+    display: none;
     top: 20%;
     left: 50%;
     width: 40px;
