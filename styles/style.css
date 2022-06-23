@@ -9,7 +9,7 @@
     --header: rgb(234, 209, 209);
     --headerlinks:#6d5858;
     --navbaritems-color:#6d5858;
-    --header-height:2.2rem;
+    --header-height:35px;
     --headercolor:rgb(231, 209, 209);
     --headings:rgb(0, 0, 0);
     --logohover:rgb(121, 107, 107);
@@ -70,7 +70,7 @@ body.dark-theme {
     --cbutton: rgb(31, 30, 50);
     --header: #191524;
     --navbaritems-color:rgb(233, 230, 234);
-    --header-height:2.2rem;
+    --header-height:35px;
     --headercolor:rgb(25, 21, 36);
     --navclose: rgb(233, 230, 234);
     --headings:#554d99;
@@ -102,7 +102,7 @@ body.dark-theme {
     --filledbar: rgb(105, 94, 176);
     --mainpagetext2:rgb(233, 230, 234);
     --csmusic:red;
-    --blobcolor: #413865;;
+    --blobcolor: #413865;
 }
 
 body.dark-theme .mainpage{
@@ -500,6 +500,8 @@ img{
     justify-content: center;
     padding-left: 5%;
     padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: calc(5% + 35px);
     z-index:999;
     opacity: 0;
     visibility: hidden;
@@ -507,7 +509,9 @@ img{
    
 }
 
-
+.viewsmodal{
+    margin: auto;
+}
 
 .active-modal{
     opacity: 1;
@@ -523,11 +527,6 @@ img{
     overflow-y: auto;
 }
 
-.viewsmodal{
-    overflow-y: auto;
-    margin-top: auto;
-    margin-bottom: var(--header-height);
-}
 
 .about_modal-abouts{
     row-gap: 1rem;
@@ -558,8 +557,8 @@ img{
     font-size: 1.5rem;
     color: var(--modalclose);
     cursor: pointer;
-    margin-left: 20px;
-    margin-right: 10px;
+    margin-left: 30px;
+    margin-right: 20px;
 }
 
 .skills_container{
