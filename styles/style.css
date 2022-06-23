@@ -921,9 +921,14 @@ img{
         transform: translate(-50%, -50%);
     }
     
+    .blob1{
+        width: 330px;
+        height: 330px;
+    }
+
     .cross1{
-        top: 50%;
-        left: 25%;
+        top: 40%;
+        left: 42%;
         width: 40px;
         height: 40px;
         animation: cross1 10s linear infinite;
@@ -931,7 +936,7 @@ img{
     
     .cross2{
         top: 14%;
-        left: 38%;
+        left: 19%;
         width: 45px;
         height: 45px;
         animation: cross2 10s linear infinite;
@@ -939,23 +944,23 @@ img{
     
     .cross3{
         top: 38%;
-        left: 86%;
+        left: 76%;
         width: 40px;
         height: 40px;
         animation: cross3 10s linear infinite;
     }
     
     .circle1{
-        top: 39%;
-        left: 60%;
+        top: 32%;
+        left: 25%;
         width: 46px;
         height: 46px;
         animation: circle1 10s linear infinite;
     }
     
     .circle2{
-        top: 6%;
-        left: 54%;
+        top: 14%;
+        left: 50%;
         width: 42px;
         height: 42px;
         animation: circle2 10s linear infinite;
@@ -963,15 +968,15 @@ img{
     
     .circle3{
         display: none;
-        top: 3%;
-        left: 50%;
-        width: 35px;
-        height: 35px;
+        top: 30%;
+        left: 85%;
+        width: 45px;
+        height: 45px;
         animation: circle2 10s linear infinite;
     }
     
     .square1{
-        top: 42%;
+        top: 39%;
         left: 10%;
         width: 45px;
         height: 45px;
@@ -979,32 +984,32 @@ img{
     }
     
     .square2{
-        top: 25%;
-        left: 55%;
+        top: 17%;
+        left: 90%;
         width: 45px;
         height: 45px;
         animation: square2 10s linear infinite; 
     }
     
     .square3{
-        top: 56%;
-        left: 90%;
+        top: 26%;
+        left: 65%;
         width: 40px;
         height: 40px;
         animation: square3 10s linear infinite; 
     }
     
     .triangle1{
-        top: 34%;
-        left: 35%;
+        top: 26%;
+        left: 37%;
         width: 40px;
         height: 40px;
         animation: triangle1 10s linear infinite; 
     }
     
     .triangle2{
-        top: 48%;
-        left: 72%;
+        top: 47%;
+        left: 94%;
         width: 40px;
         height: 40px;
         animation: triangle2 10s linear infinite
@@ -1012,8 +1017,8 @@ img{
     
     .triangle3{
         display: none;
-        top: 20%;
-        left: 50%;
+        top: 44%;
+        left: 58%;
         width: 40px;
         height: 40px;
         animation: triangle3 10s linear infinite;
@@ -1182,14 +1187,14 @@ img{
 @media only screen and (min-width:1000px){
     .photo{
         position: absolute;
-        height: 289px;
-        top:20%;
+        height: 339px;
+        top:7%;
         left: 100%;
     }
     
     .dark{  
         transition: 1s ease-in-out;
-        opacity: 80%;
+        opacity: 100%;
     }
 
     .light{
@@ -1200,7 +1205,6 @@ img{
     body.dark-theme .dark{
         display: inline;
         transition: 1s ease-in-out;
-        opacity: 100%;
     }
     
     body.dark-theme .light{
