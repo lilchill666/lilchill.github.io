@@ -867,8 +867,8 @@ img{
         --introduction_:90px;
         --text-change_:40px;
         --headings_:50px;
-        --devicestext_:26px;
-        --devicesheadings_:28px;
+        --devicestext_:21px;
+        --devicesheadings_:23px;
         --buttonstext_:28px;
         --rights_:16px;
         --navlogo_:20px;
@@ -1092,7 +1092,7 @@ img{
         text-align: center;
         display: flex;
         width: 90%;
-        height: 870px;
+        height: fit-content;
         max-width: 42%;
         margin-left: 0%;
         margin-right: 5%;
