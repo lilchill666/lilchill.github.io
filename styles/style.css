@@ -880,8 +880,8 @@ img{
         --skillssubtitles_: 26px;
         --skillsname_: 23px;
         --skillnumber_:23px;
-        --mainpagetext2_: 24px
-        }
+        --mainpagetext2_: 24px;
+    }
 
     .contactbuttons{
         display: grid;
