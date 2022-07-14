@@ -135,7 +135,7 @@ class TextScramble {
   const phrases = [
     'Welcome!',
     'I am Yaroslav Zhuk.',
-    'I am 18 years old.',
+    'I am 19 years old.',
     'I live in Ukraine💙💛.',
     'I am a developer.',
     'I am an interpreter.',
