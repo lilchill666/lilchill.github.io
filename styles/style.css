@@ -650,6 +650,10 @@ img{
     width: 10%;
 }
 
+.skills_java{
+    width: 0%;
+}
+
 .skills_python{
     width: 40%;
 }
