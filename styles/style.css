@@ -639,19 +639,19 @@ img{
 }
 
 .skills_html{
-    width: 80%;
+    width: 100%;
 }
 
 .skills_css{
-    width: 70%;
+    width: 900%;
 }
 
 .skills_js{
-    width: 10%;
+    width: 50%;
 }
 
 .skills_java{
-    width: 0%;
+    width: 30%;
 }
 
 .skills_python{
